@@ -1,0 +1,41 @@
+{
+  "name": "scanner.js",
+  "version": "2.10.3",
+  "description": "ScannerJS: JavaScript web scan JPG PDF images from TWAIN WIA scanners in browser (Chrome, Edge, Firefox or IE)",
+  "homepage": "http://asprise.com/document-scan-upload-image-browser/?scannerjs-scanner.js",
+  "main": "dist/scanner.js",
+  "man" : "man/scannerjs.1",
+  "files" : [
+    "dist", "example", "man"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "keywords": [
+    "Scanner",
+    "Twain",
+    "JavaScript",
+    "browser",
+    "document scanning",
+    "scan",
+    "WIA",
+    "Web Twain",
+    "HTML Web Browser scan",
+    "Scan from browser to JPG PDF",
+    "JavaScript Webcam",
+    "Acquire images from cameras and scanners",
+    "ScannerJS", "Scanner.js"
+  ],
+  "license": "MIT",
+  "author": { 
+    "name" : "Asprise Scan and OCR", 
+    "url" : "http://asprise.com"
+  },
+  "bugs": {
+    "url" : "http://asprise.com/ocr-document-scanning-java.net/library-api-contact.html?product=scannerjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Asprise/scannerjs.javascript-scanner-web-twain-wia-browsers-scanner.js.git"
+  }
+}

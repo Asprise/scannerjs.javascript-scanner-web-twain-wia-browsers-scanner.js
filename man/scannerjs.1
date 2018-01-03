@@ -1,0 +1,1171 @@
+.\" Man page generated from reStructuredText.
+.
+.TH "ASPRISESCANNERJSSDKFORCHROMEEDGEFIREFOXIE" "1" "August 22, 2016" "2.0" "Asprise ScannerJS Enables Direct Scan Using HTML5/JavaScript from Scanners in Browsers (Chrome, Edge, Firefox and IE)"
+.SH NAME
+AspriseScannerJsSDKforChromeEdgeFirefoxIE \- Asprise ScannerJS Enables Direct Scan Using HTML5/JavaScript from Scanners in Browsers (Chrome, Edge, Firefox and IE) Documentation
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.sp
+Table of Contents:
+.SH INTRODUCTION TO SCANNER.JS
+.SS About Scanner.js
+.sp
+Scanner.js enables any web page to allow the user to acquire images easily from scanners
+using JavaScript in most desktop browsers like Chrome, Firefox, IE, Microsoft Edge and more.
+Almost all scanners are supported and scanner.js supports a wide range of output formats:
+JPEG, multi\-page PDF, PNG and TIFF.
+In most cases, software install is not required and the user can enjoy a great scanning experience.
+.sp
+For the client side, both 32\-bit and 64\-bit browsers are supported. The server side backend can
+be implemented in any programming language, e.g., C# ASP.NET, Java, Python, PHP, Ruby on Rail, etc.
+.SS Features of Scanner.js
+.sp
+An incomplete list of features offered by Scanner.js:
+.INDENT 0.0
+.IP \(bu 2
+\fBSupport Almost All Desktop Browsers\fP \- Scanner.js supports almost all kinds of desktop browsers on Windows 32bit and 64bit.
+.IP \(bu 2
+\fBCompatible With Almost All Scanners\fP \- Scanner.js supports almost any kind of scanner on Windows 32bit and 64bit. With the Scanner.js\(aq widest compatibility, you can rest assure that your customers will able to scan from their scanners.
+.IP \(bu 2
+\fBExtreme Speed ADF Scanning\fP \- Make full use of scanners equipped with automatic document feeders;
+.IP \(bu 2
+\fBOutput to TIFF, PDF with Ease\fP \- Supporting a wide range of output formats like JPG, PNG, TIFF, PDF.
+.IP \(bu 2
+\fBPowerful Image Editing Functionality\fP \- Allows the user to re\-order pages, edit images (crop, rotate, etc) before final output.
+.IP \(bu 2
+.INDENT 2.0
+.TP
+.B \fBScan and Recognize Barcodes\fP \- Scanner.js can recognize almost every kind of bar code while scanning. Currently, the following bar code formats are supported:
+.INDENT 7.0
+.IP \(bu 2
+CODE 128 (128b, 128C, 128raw)
+.IP \(bu 2
+EAN 8 EAN 13
+.IP \(bu 2
+UPC
+.IP \(bu 2
+code 3 of 9
+.IP \(bu 2
+code interleaved 2 of 5
+.IP \(bu 2
+QR code
+.UNINDENT
+.UNINDENT
+.IP \(bu 2
+\fBBlank Page Detection\fP \- Flexible parameters allow you to perform powerful blank page detection.
+.IP \(bu 2
+\fBReturn, Save, Upload or Any Combinations\fP \- Using powerful JSON based domain\-specific language to perform complex tasks like saving to local disk, upload to remote servers or any combinations.
+.IP \(bu 2
+\fBZero dependency\fP \- Scanner.js doesn\(aqt require any other JavaScript library.
+.IP \(bu 2
+\fBEase of Use\fP \- We strive to make the developer\(aqs life easier. Scan settings can be easily specified in JSON request.
+.UNINDENT
+.sp
+\fINote: Not all features are available for all license options.\fP
+.SS Browsers Supported
+.sp
+There are two categories of browsers on the market:
+.sp
+\fBBrowsers supporting NPAPI\fP:
+\fI\%NPAPI\fP is a plug\-in API supported by many browsers
+like IE and Firefox. For browsers supporting NPAPI, scanning can be delivered either through a Java applet or
+an app.
+.sp
+\fBNon\-NPAPI Browsers\fP:
+Chrome 45+ and Microsoft Edge do not support NPAPI. For these browsers,
+scanning function is enabled through an app. The user will be prompted to download and run the app
+if it is not running (one time only).
+.sp
+Scanner.js has been optimized for the following browsers:
+.TS
+center;
+|l|l|.
+_
+T{
+NPAPI Browsers
+T}	T{
+Non\-NPAPI Browsers
+T}
+_
+T{
+Chrome 44 and lower versions
+T}	T{
+Chrome 45 and later
+T}
+_
+T{
+Microsoft IE all versions
+T}	T{
+Microsoft Edge
+T}
+_
+T{
+Firefox all versions
+T}	T{
+T}
+_
+T{
+Opera
+T}	T{
+T}
+_
+.TE
+.sp
+Please contact us if your desired browers is not in above list.
+.SS Operating Systems Supported
+.sp
+Scanner.js has been optimized for the following OS:
+.INDENT 0.0
+.IP \(bu 2
+Windows 10 32\-bit & 64\-bit
+.IP \(bu 2
+Windows 8/8.1 32\-bit & 64\-bit
+.IP \(bu 2
+Windows 7 32\-bit & 64\-bit
+.IP \(bu 2
+Windows Vista 32\-bit & 64\-bit
+.IP \(bu 2
+Windows XP 32\-bit & 64\-bit
+.IP \(bu 2
+Windows Server 2016 32\-bit & 64\-bit
+.IP \(bu 2
+Windows Server 2012 32\-bit & 64\-bit
+.IP \(bu 2
+Windows Server 2008 32\-bit & 64\-bit
+.IP \(bu 2
+Windows Server 2003 32\-bit & 64\-bit
+.UNINDENT
+.sp
+Please contact us if your desired OS is not in above list.
+.SS JavaScript Scan in Browsers Live Demo
+.sp
+Below is the screenshot of JavaScript direct scan in browser demo:
+[image: Scanner.js Demo]
+[image]
+.sp
+\fI\%Click here to access JavaScript direct scanner access from browers demo\fP\&.
+.SH SCANNER.JS REQUEST DSL REFERENCE
+.sp
+Over the years, the developer community have provided numerous feedbacks to us.
+We are trying hard to simplify your job. Instead of using traditional API,
+you can use a JSON based \fI\%domain\-specific language\fP to perform
+complex scan settings and powerful output specification.
+.SS Introduction to Scanning Domain\-Specific Language
+.sp
+To implement a typical scan function, usually you\(aqll call APIs to set the scan parameters like color mode, paper size,
+then call APIs to acquire the images and make another sets of API calls to do post processing like converting to PDF and uploading.
+Scanner.js \fI\%DSL\fP eliminates most of the API calls and allow you to simply specify your intend in a readable and maintainable format.
+.SS Hello, World: Scan DSL
+Scan Documents in Color and Save as PDF on Local Disk.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+var scanRequest = {
+  "twain_cap_setting" : {
+    "ICAP_PIXELTYPE" : "TWPT_RGB", // Color
+    "ICAP_XRESOLUTION" : "100", // DPI: 100
+    "ICAP_YRESOLUTION" : "100",
+    "ICAP_SUPPORTEDSIZES" : "TWSS_USLETTER" // Paper size: TWSS_USLETTER, TWSS_A4, ...
+  },
+  "output_settings" : [ {
+    "type" : "save",
+    "format" : "pdf",
+    "save_path" : "${TMP}\e\e${TMS}${EXT}" // Can be absolute path or path containing variables
+  } ]
+};
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+You can then pass the scan request in JSON to function \fBasprise_scanner_js_scan\fP\&. For example:
+Execute Scan Request DSL in JavaScript.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+asprise_scanner_js_scan(resultHandlerCallBackFunction, scanRequest, true, false);
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Make Use of DSL\(aqs Flexibility
+.sp
+The scan request can be either in JavaScript object or in plain string, so that you can externalize it \- for example, read it from user input or load it from an external file, url or database.
+.sp
+You may also consider setting up a number of scanning profiles to allow the user to perform personalized tasks.
+.SS Scanning DSL Specification
+Example with All Attributes.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+{
+  "request_id": "123",
+  "processing_strategy": "after\-all\-scans", // default value is "default" \- process image after each scan immediately.
+
+  // \-\-\-\-\-\-\-\-\-\-\-\-\-\-\- Scan Settings \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+  "twain_cap_setting": {
+    "ICAP_PIXELTYPE": "TWPT_GRAY,TWPT_RGB", // Preferrs GRAY, fall back Color; TWPT_BW
+    "ICAP_XSCALING/RESET": "null", // Resets a capability
+    "ICAP_XRESOLUTION": "200", // Sets the resolution
+    "ICAP_YRESOLUTION": "200", // Sets the resolution
+    "CAP_AUTOFEED": false, // TW_BOOL, No default; TRUE to use ADF or FALSE to use Flatbed
+    "ICAP_FRAMES":  "(0, 0, 4, 6)" // Scan part of the image only
+  },
+
+  "prompt_scan_more":  true, /** Default value: false */
+
+  // \-\-\-\-\-\-\-\-\-\-\-\-\-\-\- Processing Settings \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+  "discard_blank_pages": "false", /** Default value: false */
+  "blank_page_threshold": "0.02",
+  "blank_page_margin_percent": "8",
+
+  "recognize_barcodes": "false", /** Default value: false */
+
+  // \-\-\-\-\-\-\-\-\-\-\-\-\-\-\- Output Settings \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+  "output_settings": [
+    {
+      "type": "save", // return\-base64, save, upload[\-thumbnail]
+      "format": "pdf", // bmp, png, jpg, tif, pdf // optional, default is jpg
+      "thumbnail_height": 200, // only for \-thumbnail; optional, default is 200
+      "save_path": "${TMP}\e\e${TMS}${EXT}", // only for save
+
+      /** JPG realted */
+      "jpeg_quality": "90", // optional, default is 80, only for JPG format
+
+      /** TIFF Related */
+      "tiff_compression": "G4", // optional, default is empty; only for TIFF format
+      "tiff_force_single_page": "false",
+
+      /** PDF Related */
+      "pdf_force_black_white": "true", // optional, default is false; only for PDF format
+      "pdfa_compliant": "false",
+      "pdf_owner_password": "",
+      "pdf_user_password": "",
+      "pdf_text_line": "Asprise PDF/A scan by ${COMPUTERNAME}/${USERNAME} on ${DATETIME}",
+      "exif": {
+        "DocumentName": "PDF/A Scan",
+        "UserComment": "Scanned using Asprise software"
+      },
+
+      /** Upload Related */
+      "upload_after_all_done": "true", // default is true
+      "upload_one_by_one": "false", // default is false
+      "upload_target": {
+        "url": "http://asprise.com/scan/applet/upload.php?action=dump",
+        "method": "post",
+        "max_retries": 2,
+        "post_fields": { // Optional additional POST fields
+          "provider": "Asprise"
+        },
+        "post_file_field_name": "asprise_scans", // Field name of of uploaded files
+        "post_files": [ // Optional additional files to be uploaded
+          "C:\e\e_tmp0.jpg"
+        ],
+        "cookies": "name=Asprise; domain=asprise.com", // Optional cookies to pass
+        "auth": "user:pass", // Optional auth info
+        "headers": [ // Optional additioanl headers
+          "Referer: http://asprise.com"
+        ],
+        "log_file": "null", // Log HTTP operations to a file for debug purpose
+        "max_operation_time": 600, // Max operation timeout in seconds.
+        "to_file": "null" // Save the HTTP response to a file.
+      }
+    }
+  ],
+
+  // \-\-\-\-\-\-\-\-\-\-\-\-\-\-\- Other Return Options: image info \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+  "retrieve_caps": [ // caps to be retrieved for each scan
+    "ICAP_PIXELTYPE",
+    "ICAP_XRESOLUTION",
+    "ICAP_UNITS",
+    "ICAP_FRAMES"
+  ],
+
+  "retrieve_extended_image_attrs": [ // device returned extended image attributes
+    "BARCODE",
+    "TWEI_PATCHCODE"
+  ]
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS twain_cap_setting: Scan Settings
+.sp
+\fBtwain_cap_setting\fP specifies scanning settings. You may use either TWAIN constant name or the actual contant value in both attribute names and values.
+For example, \fB"ICAP_PIXELTYPE": "TWPT_GRAY"\fP is equivalent to \fB"0x0101": "1"\fP\&.
+.sp
+Various capability setting and resetting operations are supported:
+.INDENT 0.0
+.TP
+.B Set Single Value
+Using a single value to set a capability directly. Example: \fB"ICAP_PIXELTYPE": "TWPT_GRAY"\fP
+.TP
+.B Set Value with Fallback
+A list of values separated with comma instructs Asprise Scanning to try each value in order until setting is successful. Example: \fB"ICAP_PIXELTYPE": "TWPT_GRAY,TWPT_RGB"\fP
+.TP
+.B Reset a Capability
+Appending the capability name with \fB/RESET\fP to instruct the device to reset a capability to its device default value. Example: \fB"ICAP_XSCALING/RESET": null\fP
+.UNINDENT
+.sp
+You may specify capability setting attributes in any order as Asprise Scanning will intelligently coordinate capability setting properly.
+.sp
+Common used capability list (note that a particular scanner may not support all the capabilities list below):
+.sp
+
+.SS retrieve_caps: Image Information to be Returned
+.sp
+Use it when you are interested to know the metadata about the images or the actual scanning setting used when scanning the images.
+\fBretrieve_caps\fP specifies an array of capabilites should be returned for each image acquried. You may use either TWAIN constant name or the actual contant value
+as the array element. For example, \fB["ICAP_PIXELTYPE", "ICAP_XRESOLUTION"]\fP is equivalent to \fB["0x0101",  "0x1118"]\fP\&.
+.sp
+You may refer to \fI\%twain_cap_setting: Scan Settings\fP for common used capabilities.
+.SS retrieve_extended_image_attrs: Extended Image Attributes to be Returned
+.sp
+Similar to \fBretrieve_caps\fP, \fBretrieve_extended_image_attrs\fP specifies an array of extended image attributes to be returned for each image acquried. You may use either TWAIN constant name or the actual contant value
+as the array element. For example, \fB["TWEI_PATCHCODE"]\fP is equivalent to \fB["0x1212"]\fP\&.
+.sp
+Note that only high end scanners may return extended image attributes.
+.sp
+For your convenience, \fB"BARCODE"\fP will be expanded to the following list of attributes: "TWEI_BARCODECOUNT", "TWEI_BARCODECONFIDENCE", "TWEI_BARCODEX", "TWEI_BARCODEY", "TWEI_BARCODETYPE", "TWEI_BARCODEROTATION", "TWEI_BARCODETEXTLENGTH", "TWEI_BARCODETEXT".
+.SS recognize_barcodes: Barcode Recognition
+.sp
+You may request high end scanners to decode barcodes using \fBretrieve_extended_image_attrs\fP\&. However, the rest of scanners are unable to decode barcodes.
+By setting \fBrecognize_barcodes\fP to \fBtrue\fP, you instruct Asprise Scanning to recognize a wide range of barcode and QR code formats even
+if the scanner devices don\(aqt support barcode recognition. The following barcode formats are supported:
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+CODE 128 (128b, 128C, 128raw)
+.IP \(bu 2
+EAN 8 EAN 13
+.IP \(bu 2
+UPC
+.IP \(bu 2
+code 3 of 9
+.IP \(bu 2
+code interleaved 2 of 5
+.IP \(bu 2
+QR code
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS discard_blank_pages: Discard Blank Pages Automatically
+.sp
+To discard blank page automatically, you can set \fBdiscard_blank_pages\fP to \fBtrue\fP\&. You may also tune
+the following paramters:
+.INDENT 0.0
+.TP
+.B blank_page_threshold
+Specifies the maximum ink coverage to be considered as blank. The default value is 0.02, meaning
+if the ink coverage is less than 2%, then it is considered as blank. Valid value range: 0 ~ 1.0
+.TP
+.B blank_page_margin_percent
+Page margins are often prone to noise. This parameter allow you to exclude certain percentage of page
+on the margins. Default value is 8, meaning 8% of page width is considered as left and right margins and
+8% of page height is for top and bottom margins. Valid value range: 0 ~ 100
+.UNINDENT
+.SS prompt_scan_more: Scan Multiple Pages in a Session
+.sp
+Set \fBprompt_scan_more\fP to \fBtrue\fP to prompt the user to scan multiple pages in a session.
+.SS Output Settings
+.sp
+For a scan session, you may specify any combination of the following output setting types to the \fBoutput_settings\fP attribute:
+.INDENT 0.0
+.TP
+.B \fI\%save\fP
+Save the scanned images to local hard disk drives or mapped network locations. Required attribute: \fBsave_path\fP\&. More details are available in \fI\%save, save\-thumbnail\fP
+.TP
+.B \fI\%upload\fP
+Upload the scanned images to a URL. Required attribute: \fBupload_target\fP\&.
+.TP
+.B \fI\%return\-base64\fP
+Returns the data of the scanned images in base64 format. Required attribute: none.
+.TP
+.B return\-handle
+For C/C++ only: returns the handles to the scanned images. Required attribute: none.
+.TP
+.B *\-thumbnail
+save\-thumbnail, upload\-thumbnail and return\-base\-thumbnail performs the same operations on the thumbnails (scaled down version). \fBthumbnail_height\fP is optional with default value of 200 (the height of the
+thumbnail should be 200 pixels).
+.UNINDENT
+.sp
+You are free to combine any number of the output settings. For example, below request instructs to upload the scanned images in PDF format to remote web server and
+return the base64 encoded data of the thumbnails (JPG format):
+Upload PDF and Return the Thumbnails in JPG.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+{
+   "output_settings" : [ {
+     "type" : "upload",
+     "format" : "pdf",
+     "upload_target" : {
+       "url" : "http://asprise.com/scan/applet/upload.php?action=dump"
+     }
+   }, {
+     "type" : "return\-base64\-thumbnail",
+     "format" : "jpg"
+   } ]
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Image Formats Supported
+.sp
+You use \fBformat\fP attribute to specify the desired output format. The following list of image formats are supported:
+.INDENT 0.0
+.TP
+.B jpg
+JPEG format. This is the default format, i.e., jpg will be used if \fBformat\fP attribute is not present.
+.sp
+Use \fBjpeg_quality\fP to specify the JPEG quality. The default value is 80.
+.TP
+.B bmp
+Bitmap format.
+.TP
+.B png
+Portable Network Graphics.
+.TP
+.B tif
+Tagged Image File Format.
+.sp
+Use \fBtiff_compression\fP to specify the compression to be used for TIFF. Valid values are: \fBG4\fP, \fBG3\fP, \fBLZW\fP, \fBRLE\fP, \fBZIP\fP and \fBNONE\fP (default).
+.TP
+.B pdf
+Portable Document Format. The following list of attributes may be used to customize PDF output:
+.sp
+\fBpdf_force_black_white\fP: Default is false, set to true to use CCITT Group 4 Compression for ultra small file size.
+.sp
+\fBpdfa_compliant\fP: Default is false, set to true to force PDF\-A/1 compliance.
+.sp
+\fBpdf_text_line\fP: Optionally, you can specify a line to text to be printed on the bottom left of the first page. Macros can be used e.g., "Scanned by ${COMPUTERNAME}/${USERNAME} on ${DATETIME}".
+.sp
+\fBpdf_owner_password\fP, \fBpdf_user_password\fP: Optionally, you may specify password when \fBpdfa_compliant\fP is false.
+.sp
+\fBexif\fP: the following tags can be specified: \fBDocumentName\fP, \fBUserComment\fP and \fBCopyright\fP\&.
+.UNINDENT
+.SS save, save\-thumbnail
+.sp
+You use \fBsave\fP and \fBsave\-thumbnail\fP to save the scanned images or thumbnails to local hard disk drives or mapped network locations.
+.sp
+\fBsave_path\fP is a required attribute, which you use to specify the target output location. Note \fBsave_path\fP specifies the complete target file location, not the containing folder.
+If you set \fB"save_path": .\e\etest.jpg\fP and there are multiple images scanned, you\(aqll get only the last one as previous images will be overwritten. To avoid this problem,
+you may use any of the macros listed below:
+.INDENT 0.0
+.TP
+.B ${TMS}
+Timestamp with milliseconds, e.g, \(aq2020\-12\-25_08\-06\-27.880\(aq.
+.TP
+.B ${TM}
+Timestamp without milliseconds, e.g, \(aq2020\-12\-25_08\-06\-27\(aq.
+.TP
+.B ${DATE}
+Readable timestamp in a format similar to ISO 8601.
+.TP
+.B ${I}
+Image index in a scanning session.
+.TP
+.B ${EXT}
+Image file extension according to the image format specified using \fBformat\fP (default is JPG).
+.TP
+.B ${TMP}, ${USERPROFILE} and all other env variables
+Environment variables are supported. You may define custom environment variables and use them in the path as long as your enclose the names with \fB${\fP and \fB}\fP\&.
+.UNINDENT
+.sp
+Unsupported macros will be replaced with \fB_\fP\&.
+.sp
+The actual path that the image is written will be returned in the result.
+.SS upload, upload\-thumbnail
+.sp
+You use \fBupload\fP and \fBupload\-thumbnail\fP to upload the scanned images or thumbnails to a remote server. The back end can be implemented in any programming language like
+C, C#/VB.NET, Java, Node.js, PHP, Python, Ruby on Rails, etc. as image data are sent using standard HTTP POST.
+.sp
+To specify the upload destination, you need to set \fBupload_target\fP to an object with the following attributes:
+.INDENT 0.0
+.TP
+.B url
+The only required attribute; specifies the target URL.
+.TP
+.B max_retries
+Max number of retries before giving up; the default value is 2.
+.TP
+.B post_file_field_name
+The name of the POST field for image files. Default value is \(aqasprise_scans\(aq if there is only one file or \(aqasprise_scans[]\(aq if there are many files. You don\(aqt need to add \(aq[]\(aq as the system will auto fix it.
+.TP
+.B post_fields
+Optionally specifies additional fields to be POSTed.
+.TP
+.B cookies
+Optional cookies to be sent over along.
+.TP
+.B auth
+Optionally authentication token
+.TP
+.B headers
+Optionally adds an array of additional HTTP request headers
+.TP
+.B log_file
+Optionally specify a local file to print logging information for debug purpose.
+.TP
+.B max_operation_time
+Max HTTP operation time allowed in seconds. Default value is 1200 (20 minutes).
+.UNINDENT
+.SS return\-base64, return\-base64\-thumbnail
+.sp
+Use \fBreturn\-base64\fP and \fBreturn\-base64\-thumbnail\fP to return the data of the scanned images and thumbnails in base64 format.
+.sp
+Once obtained the base64 encoded data from the result, you can then decode base64 data into binary and read the image from it.
+.SH JAVASCRIPT SCANNING LIBRARY API DEV GUIDE
+.SS Include scanner.js
+.sp
+For evaluation or lite usage, you can simply include a JavaScript .js file from asprise.com.
+Alternatively, you may \fI\%download Scanner.js zip\fP and unzip the files into a folder on your own web server.
+.SS Option 1: Include scanner.js from asprise.com
+.sp
+For this option, you simply use a \fBscript\fP tag to include scanner.js:
+Include scanner.js from asprise.com.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+<html lang="en">
+<head>
+    <script src="//asprise.azureedge.net/scannerjs/scanner.js" type="text/javascript"></script>
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Alternatively, you can host it on your own server.
+.SS Option 2: Host scanner.js on your own server
+.sp
+\fI\%Download scanner.js zip\fP and unzip the files into a folder on your own web server.
+.sp
+There isn\(aqt any server side script in scanner.js files so you can unzip it to any web server. Once done,
+you can include it in your web page:
+Include scanner.js from your server.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+<html lang="en">
+<head>
+    <script src="//YOUR_SERVER/PATH_TO/scanner.js" type="text/javascript"></script>
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS The Scanning Process
+.sp
+In this section, we\(aqll walk through the typical scanning process.
+.sp
+We\(aqll use a simple example to illustrate the basic usage of scanner.js. This example will allow the user to scan images and display them on the web page (uploading will be shown in later examples).
+Below is the screenshot of the web page after two pages are scanned:
+[image: Demo: Scan to JPG and display]
+[image]
+.INDENT 0.0
+.IP \(bu 2
+\fI\%View the source code of this example on GitHub\fP\&.
+.IP \(bu 2
+\fI\%Run the demo\fP\&.
+.UNINDENT
+.sp
+Make sure you have already included scanner.js script. To perform a scan, you need to call
+the main interface Javascript function \fBscanner.scan\fP, which accepts the following
+arguments in order:
+.INDENT 0.0
+.TP
+.B callbackFunction
+Function to be called after the scan is done. Required.
+.TP
+.B requestSpecification
+The scan request in JavaScript or plain string, as defined in scan_request\&. Required.
+.TP
+.B useAspriseDialog
+Whether Asprise scan dialog (allows the user to preview, delete, re\-arrange order, and edit acquired images) should be used. Optional. Default to true.
+.TP
+.B showScannerUI
+Whether native UI (if any) of the scanner device should be shown. Optional. Default to false.
+.UNINDENT
+.SS Initiate a scan
+.sp
+To initiate a scan, you can simply
+call \fBscanner.scan\fP with proper arguments. For example, the code below initiates a scan that
+will output images in jpg format:
+Scan to JPEG format in\-memory.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+function scanToJpg() {
+   scanner.scan(displayImagesOnPage,
+   {
+      "output_settings" :
+      [
+         {
+            "type" : "return\-base64",
+            "format" : "jpg"
+         }
+      ]
+   }
+   );
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+You may use a button to invoke the above function:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+<button type="button" onclick="scanToJpg();">Scan</button>
+
+<div id="images"></div>
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+The \fBdiv\fP with name \fBimages\fP will be used to display images scanned later.
+.sp
+Once the user presses the Scan button, the scan dialog will present and the user
+can then scan documents. After the scanning is done, the result handler callback function
+will be invoked.
+.SS Handle the scan result using a callback function
+.sp
+Scanner.js will invoke the callback function with the following arguments:
+.INDENT 0.0
+.TP
+.B successful
+Boolean flag indicating whether the call is successful or not.
+.TP
+.B mesg
+Optional message especially when not successful; could be undefined.
+.TP
+.B response
+The response returned from scanner.js.
+.UNINDENT
+.sp
+Below is the implementation of the result callback function for the example above:
+Process scan result and display images on the web page.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+/** Processes the scan result */
+function displayImagesOnPage(successful, mesg, response) {
+   if(!successful) { // On error
+      console.error(\(aqFailed: \(aq + mesg);
+      return;
+   }
+
+   if(successful && mesg != null && mesg.toLowerCase().indexOf(\(aquser cancel\(aq) >= 0) { // User canceled.
+      console.info(\(aqUser canceled\(aq);
+      return;
+   }
+
+   var scannedImages = scanner.getScannedImages(response, true, false); // returns an array of ScannedImage
+   for(var i = 0; (scannedImages instanceof Array) && i < scannedImages.length; i++) {
+      var scannedImage = scannedImages[i];
+      processScannedImage(scannedImage);
+   }
+}
+
+/** Images scanned so far. */
+var imagesScanned = [];
+
+/** Processes a ScannedImage */
+function processScannedImage(scannedImage) {
+   imagesScanned.push(scannedImage);
+   var elementImg = createDomElementFromModel( {
+       \(aqname\(aq: \(aqimg\(aq,
+       \(aqattributes\(aq: {
+           \(aqclass\(aq: \(aqscanned\(aq,
+           \(aqsrc\(aq: scannedImage.src
+       }
+   });
+   document.getElementById(\(aqimages\(aq).appendChild(elementImg);
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+First, we check whether the scan is successful or not. If successful, we check whether the user cancels \- in which case no image will be returned.
+.sp
+In a single scan session, you may specify to return both originals and thumbnails (see scan_request for details).
+The \fBscanner.getScannedImages\fP function can be used to extract either or both types of the images from the response:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+function getScannedImages(response, includeOriginals, includeThumbnails)
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+\fBscanner.getScannedImages\fP returns an array of \fBScannedImage\fP, which is declared as below:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+var ScannedImage = function (mimeType, srcIsBase64, src, imageInfo) { // constructor
+   // Object fields
+   this.mimeType = mimeType;       // Mime type, e.g., \(aqimage/jpeg\(aq
+   this.srcIsBase64 = srcIsBase64; // true if src is in base64 data uri false if normal url
+   this.src = src;                 // src, can be either base64 data uri or normal url
+   this.imageInfo = imageInfo;     // object storing image properties
+};
+
+// Object methods
+ScannedImage.prototype.getWidth(); // image width or undefined if not available
+ScannedImage.prototype.getHeight(); // image height or undefined
+
+ScannedImage.prototype.isColor(); // Whether it is a color image
+ScannedImage.prototype.isGray(); // Whether it is a gray image
+ScannedImage.prototype.isBlackWhite(); // Whether it is a black/white image
+
+ScannedImage.prototype.getResolution(); // The horizontal scan resolution if available
+ScannedImage.prototype.getBitsPerPixel(); // Bits per pixel of undefined
+
+ScannedImage.prototype.getBase64NoPrefix(); // Base64 encoding of the image data
+
+ScannedImage.prototype.toString(); // Readable string describing the image
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Once an array of \fBScannedImage\fP is obtained, we can iterate each ScannedImage (Lines 13\-17) and create an \fBimg\fP element from it
+and then display images on the web page using function \fBprocessScannedImage\fP\&. Note that we use \fBimagesScanned\fP to track all ScannedImages
+so that we may manipulate later (e.g., upload to server).
+.sp
+\fBscanner.createDomElementFromModel\fP is function defined in scanner.js to help create DOM elements from declarations.
+.sp
+Again, the complete source code is available on \fI\%GitHub\fP\&.
+.sp
+Now, the scanned images are shown on the web page. Next, we\(aqll explore how to scan and upload to the server side.
+.SS Scan then Upload in Browsers
+.sp
+There are two options to implement scan then upload in browsers. You can scan and and later upload the scanned images with an existing \fB<form>\fP when submitted.
+Alternatively, you can instruct scanner.js to scan and upload directly to the server side.
+.SS Option 1: Scan and Upload with a Form
+.sp
+We can simply extend the previous example by adding a HTML \fB<form>\fP element and an optional
+\fB<div>\fP to display server response as well as a JavaScript function to submit the form:
+Form HTML.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+<form id="form1" action="https://asprise.com/scan/applet/upload.php?action=dump" method="POST" enctype="multipart/form\-data" target="_blank" >
+   <input type="text" id="sample\-field" name="sample\-field" value="Test scan"/>
+   <input type="button" value="Submit" onclick="submitFormWithScannedImages();">
+</form>
+
+<div id="server_response"></div>
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+JavaScript form submission function.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+function submitFormWithScannedImages() {
+   if (scanner.submitFormWithImages(\(aqform1\(aq, imagesScanned, function (xhr) {
+       if (xhr.readyState == 4) { // 4: request finished and response is ready
+           document.getElementById(\(aqserver_response\(aq).innerHTML = "<h2>Response from the server: </h2>" + xhr.responseText;
+           document.getElementById(\(aqimages\(aq).innerHTML = \(aq\(aq; // clear images
+           imagesScanned = [];
+       }
+   })) {
+       document.getElementById(\(aqserver_response\(aq).innerHTML = "Submitting, please stand by ...";
+   } else {
+       document.getElementById(\(aqserver_response\(aq).innerHTML = "Form submission cancelled.";
+   }
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP \(bu 2
+\fI\%View the source code of this example on GitHub\fP\&.
+.IP \(bu 2
+\fI\%Run the demo\fP\&.
+.UNINDENT
+.sp
+The \fB<form>\fP target URL \fI\%https://asprise.com/scan/applet/upload.php?action=dump\fP is
+a PHP script that accept form post and echo back all the data received. You may use it to test your form submissions.
+All uploaded images to this URL will be automatically deleted after a few days.
+\fI\%The source code of this script is available here\fP\&. Note that you may
+use any programming language (like C# ASP.NET, Java, PHP, Python, Ruby on Rails) to implement the server side.
+.sp
+Let\(aqs take a look at the JavaScript function. \fBscanner.submitFormWithImages\fP, which is defined in scanner.js,
+submits scanned images along with all form data to the action url through \fI\%XMLHttpRequest\fP\&.
+It accepts the following arguments in order:
+.INDENT 0.0
+.TP
+.B formId
+The value of the attribute \fBid\fP of the \fB<form>\fP element. Required.
+.TP
+.B images
+An \fBArray\fP of \fBScannedImage\fP\&. Its length must be greater than 0 otherwise form submission will be canceled. Required.
+.TP
+.B onReadyStateChangeHandler
+Callback function to be set as \fI\%XMLHttpRequest.onreadystatechange\fP\&.
+.UNINDENT
+.sp
+\fBscanner.submitFormWithImages\fP returns the XMLHttpRequest object or undefined if submission is canceled
+(form with the given id doesn\(aqt exist or no scanned images are passed).
+.sp
+When form post is done (\fBxhr.readyState == 4\fP), we displays the server response and clear scanned images on the web page (Lines 3\-7).
+.sp
+The following is a screenshot of the web page after the scanned image has been uploaded through the form:
+[image: Demo: Scan to form and upload]
+[image]
+.sp
+In practice, the upload script usually returns key information through JSON rather than
+HTML markups. Instead of using \fI\%https://asprise.com/scan/applet/upload.php?action=dump\fP, you may set the target
+URL to \fI\%https://asprise.com/scan/applet/upload.php?action=upload\fP to return path to the upload file only.
+.SS Scan to PDF and Upload with a Form
+.sp
+One common use of scanner.js is to scan images as PDF and display thumbnails on the web page.
+We can modify the code of the above example to implement this feature.
+.sp
+First, we create a JavaScript function \fBscanToPdfWithThumbnails\fP to initiate a scan
+with two output settings: one for originals (PDF) and one for thumbnails (JPG):
+JavaScript scan originals as PDF and thumbails as JPG.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+function scanToPdfWithThumbnails() {
+   scanner.scan(displayImagesOnPage,
+     {
+         "output_settings": [
+             {
+                 "type": "return\-base64",
+                 "format": "pdf",
+                 "pdf_text_line": "By ${USERNAME} on ${DATETIME}"
+             },
+             {
+                 "type": "return\-base64\-thumbnail",
+                 "format": "jpg",
+                 "thumbnail_height": 200
+             }
+         ]
+     }
+   );
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+For detailed configuration, please refer to scan_output_settings_img_formats\&.
+.sp
+Now, we need to modify \fBdisplayImagesOnPage\fP to store originals and display thumbnails on the web page:
+JavaScript scan originals into PDF and thumbails into JPG.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+function displayImagesOnPage(successful, mesg, response) {
+   if(!successful) { // On error
+       console.error(\(aqFailed: \(aq + mesg);
+       return;
+   }
+
+   if(successful && mesg != null && mesg.toLowerCase().indexOf(\(aquser cancel\(aq) >= 0) { // User cancelled.
+       console.info(\(aqUser cancelled\(aq);
+       return;
+   }
+
+   var scannedImages = scanner.getScannedImages(response, true, false); // returns an array of ScannedImage
+   for(var i = 0; (scannedImages instanceof Array) && i < scannedImages.length; i++) {
+       var scannedImage = scannedImages[i];
+       processOriginal(scannedImage);
+   }
+
+   var thumbnails = getScannedImages(response, false, true); // returns an array of ScannedImage
+   for(var i = 0; (thumbnails instanceof Array) && i < thumbnails.length; i++) {
+       var thumbnail = thumbnails[i];
+       processThumbnail(thumbnail);
+   }
+}
+
+/** Images scanned so far. */
+var imagesScanned = [];
+
+/** Processes an original */
+function processOriginal(scannedImage) {
+   imagesScanned.push(scannedImage);
+}
+
+/** Processes a thumbnail */
+function processThumbnail(scannedImage) {
+   var elementImg = createDomElementFromModel( {
+       \(aqname\(aq: \(aqimg\(aq,
+       \(aqattributes\(aq: {
+           \(aqclass\(aq: \(aqscanned\(aq,
+           \(aqsrc\(aq: scannedImage.src
+       }
+   });
+   document.getElementById(\(aqimages\(aq).appendChild(elementImg);
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+The \fBsubmitFormWithScannedImages\fP function in previous example will remain the same: it will
+submit form along with \fBimagesScanned\fP (which stores the originals).
+.INDENT 0.0
+.IP \(bu 2
+\fI\%View the source code of this example on GitHub\fP\&.
+.IP \(bu 2
+\fI\%Run the demo\fP\&.
+.UNINDENT
+.sp
+Once the user clicks Submit button,
+the PDF file will be uploaded as shown below. Click the PDF icon to view it.
+[image: Demo: Scan PDF to form and upload]
+[image]
+.SS Option 2: Scan to PDF and Upload Directly Through Scanner.js
+.sp
+Scanner.js has the capability of uploading images immediately after scanning. Instead of uploading images
+through a \fB<form>\fP, you may instruct scanner.js to upload images directly.
+JavaScript scan and upload directly.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+function scanAndUploadDirectly() {
+   scanner.scan(displayServerResponse,
+       {
+           "output_settings": [
+               {
+                   "type": "upload",
+                   "format": "pdf",
+                   "upload_target": {
+                       "url": "https://asprise.com/scan/applet/upload.php?action=dump",
+                       "post_fields": {
+                           "sample\-field": "Test scan"
+                       },
+                       "cookies": document.cookie,
+                       "headers": [
+                           "Referer: " + window.location.href,
+                           "User\-Agent: " + navigator.userAgent
+                       ]
+                   }
+               }
+           ]
+       }
+   );
+}
+
+function displayServerResponse(successful, mesg, response) {
+   if(!successful) { // On error
+       document.getElementById(\(aqserver_response\(aq).innerHTML = \(aqFailed: \(aq + mesg;
+       return;
+   }
+
+   if(successful && mesg != null && mesg.toLowerCase().indexOf(\(aquser cancel\(aq) >= 0) { // User cancelled.
+       document.getElementById(\(aqserver_response\(aq).innerHTML = \(aqUser cancelled\(aq;
+       return;
+   }
+
+   document.getElementById(\(aqserver_response\(aq).innerHTML = getUploadResponse(response);
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Line 7 specifies the image format is \fBpdf\fP\&. Of course, you can also use other formats like \fBjpg\fP, but here we want
+a single file even if there are multiple images.
+.sp
+Line 6 specifies the output setting type is \fBupload\fP\&. For this type, you must specify \fBupload_target\fP\&.
+The upload target should contains information like url, additional post fields, cookies and headers if any (Lines 8\-18).
+.sp
+After the images are scanned and uploaded, \fBdisplayServerResponse\fP will be invoked. In this case, \fBresponse\fP
+contains the server response instead of the actual image data. Defined in scanner.js, \fBgetUploadResponse\fP
+extracts server response.
+.sp
+And the corresponding HTML code:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+<button type="button" onclick="scanAndUploadDirectly();">Scan and Upload</button>
+
+<div id="server_response"></div>
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP \(bu 2
+\fI\%View the source code of this example on GitHub\fP\&.
+.IP \(bu 2
+\fI\%Run the demo\fP\&.
+.UNINDENT
+.SS Other In\-Browser Scan Tasks
+.sp
+Scanner.js offers a wide range of functionalities. Below lists common used tasks.
+.SS Scan to Local Disk
+.sp
+To scan to local disk, you need to add an output setting with \fBsave\fP type and
+specify the \fBsave_path\fP (either absolute path or path containing macros, refer to scan_output_settings_save):
+JavaScript scan PDF to local disk.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+function scanToLocalDisk() {
+   scanner.scan(displayResponseOnPage,
+       {
+           "output_settings": [
+               {
+                   "type": "save",
+                   "format": "pdf",
+                   "save_path": "${TMP}\e\e${TMS}${EXT}"
+               }
+           ]
+       }
+   );
+}
+
+function displayResponseOnPage(successful, mesg, response) {
+   document.getElementById(\(aqresponse\(aq).innerHTML = scanner.getSaveResponse(response);
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP \(bu 2
+\fI\%View the source code of this example on GitHub\fP\&.
+.IP \(bu 2
+\fI\%Run the demo\fP\&.
+.UNINDENT
+.SS Scan Without Using Asprise Dialog
+.sp
+Asprise Dialog provides an optimized user experience, and using it is highly recommended. However,
+if you don\(aqt want to make use it, you can set \fBuse_asprise_dialog\fP to false to disable it:
+JavaScript scan without Asprise Dialog.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+function scanWithoutAspriseDialog() {
+   scanner.scan(displayImagesOnPage,
+           {
+               "use_asprise_dialog": false,
+               "output_settings": [
+                   {
+                       "type": "return\-base64",
+                       "format": "jpg"
+                   }
+               ]
+           }
+   );
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP \(bu 2
+\fI\%View the source code of this example on GitHub\fP\&.
+.IP \(bu 2
+\fI\%Run the demo\fP\&.
+.UNINDENT
+.SS Scan as PDF with CCITT G4 for Ultra Small File Size
+.sp
+If file size is a concern, you may use PDF with CCITT G4 compression for great saving of disk space.
+The trade\-off is that PDF with CCITT G4 is black/white only. To use it:
+JavaScript scan as PDF with CCITT G4.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+scanner.scan(displayServerResponse,
+    {
+        "output_settings": [
+            {
+                "type": "upload",
+                "format": "pdf",
+                "pdf_force_black_white": true, // Enables CCITT G4 compression
+                "upload_target": {
+                    "url": "https://asprise.com/scan/applet/upload.php?action=dump"
+                }
+            }
+        ]
+    }
+);
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP \(bu 2
+\fI\%View the source code of this example on GitHub\fP\&.
+.IP \(bu 2
+\fI\%Run the demo\fP\&.
+.UNINDENT
+.SS Additional Control Options
+.sp
+
+.SS Obtain a License for Production Use
+.sp
+So you have successfully developed your Java applications with Asprise Scanning and Imaging SDK. It\(aqs time to distribute your programs to end users.
+First, make sure you are an authorized licensee registered with Asprise. To purchase a license, please visit: \fI\%http://asprise.com\fP
+.SH AUTHOR
+Asprise Inc
+.SH COPYRIGHT
+2016, Asprise Inc
+.\" Generated by docutils manpage writer.
+.
